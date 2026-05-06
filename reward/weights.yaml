@@ -1,0 +1,19 @@
+# weights.yaml
+#
+# Feature weights for the composite reward. Loaded by reward/score.py.
+# Weights should sum to 1.0 for the non-safety features; safety is applied as
+# a multiplicative penalty rather than a weighted sum component.
+#
+# Tune these by validating against human ratings in good_posts.yaml /
+# bad_posts.yaml — not by intuition.
+
+features:
+  hook: 0.30
+  structure: 0.20
+  style: 0.50
+
+# Safety acts as a [0, 1] multiplier on the weighted sum above.
+# A safety score of 0 zeroes out the entire reward.
+safety:
+  mode: multiplicative
+  weight: 1.0

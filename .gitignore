@@ -216,3 +216,16 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Project-specific experiment artifacts
+wandb/
+results/*.jsonl
+results/**/*.jsonl
+
+# Production banned-phrase list. Public repo ships only the .example.
+# See data/safety_banned.example.yaml header for rationale.
+data/safety_banned.yaml
+
+# Personal human-rated calibration data. Reflects the author's taste and
+# is not ground truth anyone else should reuse — kept local.
+data/labeled_posts.yaml

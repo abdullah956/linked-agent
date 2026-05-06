@@ -1,0 +1,50 @@
+# topics.yaml
+#
+# LinkedIn-appropriate topic prompts used to seed generation during baseline
+# collection and RL rollouts. Each entry is a short label + a one-line prompt
+# the model can riff on.
+#
+# Schema:
+#   - id:     string, short slug (used as topic label in good_posts/bad_posts)
+#     prompt: one-line instruction the agent will be conditioned on
+
+- id: career
+  prompt: A reflection on a career-defining moment or decision.
+- id: career_pivot
+  prompt: Lessons from changing roles, industries, or specialties mid-career.
+- id: tech_leadership
+  prompt: A practical lesson from leading engineers or tech teams.
+- id: learning_in_public
+  prompt: Sharing what you learned this week and what is still confusing.
+- id: hiring
+  prompt: An honest take on what actually matters when hiring engineers.
+- id: interviewing
+  prompt: A useful pattern from technical interviewing — as candidate or interviewer.
+- id: ai
+  prompt: A grounded observation about applying AI in real products.
+- id: ai_agents
+  prompt: A specific lesson from building or using AI agents in production.
+- id: llm_engineering
+  prompt: An engineering insight from working with LLM-based systems.
+- id: open_source
+  prompt: A story or lesson from contributing to or maintaining open source.
+- id: side_projects
+  prompt: What a side project taught you that day-job work never would.
+- id: engineering_culture
+  prompt: A concrete example of healthy or unhealthy engineering culture.
+- id: code_review
+  prompt: A small habit that made code review materially better.
+- id: incidents
+  prompt: A blameless takeaway from a production incident.
+- id: productivity
+  prompt: A workflow change that actually moved the needle.
+- id: remote_work
+  prompt: A practical insight about working remotely or async.
+- id: mentorship
+  prompt: A mentoring moment — given or received — that stuck with you.
+- id: feedback
+  prompt: How giving or receiving feedback changed an outcome.
+- id: founders
+  prompt: A grounded observation from founding or working at an early startup.
+- id: portfolio_projects
+  prompt: How a portfolio project led to an opportunity or insight.

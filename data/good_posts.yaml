@@ -1,0 +1,81 @@
+# good_posts.yaml
+#
+# Hand-curated LinkedIn posts that the author considers good.
+# These ground the reward function: features should score these high.
+#
+# Schema (one entry per list item):
+#   - id:        string, stable identifier (e.g. "good_001")
+#     text:      multi-line post text (use YAML "|" block scalar)
+#     my_rating: int, 1-10 — author's subjective quality rating
+#     why_good:  free text explanation of what makes this post work
+#     topic:     string, short topic label matching topics.yaml when possible
+
+- id: good_001
+  text: |
+    PLACEHOLDER — paste a real good post here.
+  my_rating: 9
+  why_good: PLACEHOLDER
+  topic: career
+
+- id: good_002
+  text: |
+    PLACEHOLDER
+  my_rating: 8
+  why_good: PLACEHOLDER
+  topic: tech_leadership
+
+- id: good_003
+  text: |
+    PLACEHOLDER
+  my_rating: 9
+  why_good: PLACEHOLDER
+  topic: learning_in_public
+
+- id: good_004
+  text: |
+    PLACEHOLDER
+  my_rating: 8
+  why_good: PLACEHOLDER
+  topic: hiring
+
+- id: good_005
+  text: |
+    PLACEHOLDER
+  my_rating: 9
+  why_good: PLACEHOLDER
+  topic: ai
+
+- id: good_006
+  text: |
+    PLACEHOLDER
+  my_rating: 8
+  why_good: PLACEHOLDER
+  topic: engineering_culture
+
+- id: good_007
+  text: |
+    PLACEHOLDER
+  my_rating: 9
+  why_good: PLACEHOLDER
+  topic: career_pivot
+
+- id: good_008
+  text: |
+    PLACEHOLDER
+  my_rating: 8
+  why_good: PLACEHOLDER
+  topic: side_projects
+
+- id: good_009
+  text: |
+    PLACEHOLDER
+  my_rating: 9
+  why_good: PLACEHOLDER
+  topic: mentorship
+
+- id: good_010
+  text: |
+    PLACEHOLDER
+  my_rating: 8
+  why_good: PLACEHOLDER
+  topic: open_source

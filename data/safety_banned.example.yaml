@@ -1,0 +1,51 @@
+# safety_banned.example.yaml
+#
+# Public-safe minimal banned-phrase list. Loader (reward/features/safety.py)
+# prefers `data/safety_banned.yaml` if present and falls back to this file
+# with a logged warning. The real production list belongs in
+# data/safety_banned.yaml, which is .gitignored.
+#
+# Why split this way:
+#   Shipping a comprehensive slur inventory in a public repo creates the
+#   exact harm vectors the inventory is meant to prevent. We treat the
+#   banned list as production config, not source code. See LEARNINGS.md
+#   for the full reasoning.
+#
+# Schema:
+#   slurs:                list of categorical slurs (regex patterns, \b-anchored)
+#   harassment:           structural harassment patterns
+#   threats_of_violence:  threat patterns
+#   sexual_explicit:      explicit sexual content patterns
+#
+# All patterns are matched case-insensitively against normalized text
+# (curly quotes/dashes mapped to ASCII before matching).
+
+slurs:
+  # Five universally-recognized racial/ethnic slurs that appear in every
+  # published moderation taxonomy. Soft-encoded so the YAML itself isn't
+  # easily extracted as a slur list. Loader assembles them with \b anchors,
+  # so pattern authors are responsible for plural/inflection handling
+  # (e.g. trailing `s?` for plurals, `(?:ed|ing)?` for verbal forms).
+  - "n[i1]gger(?:s)?"
+  - "n[i1]gga(?:s)?"
+  - "f[a@]ggot(?:s)?"
+  - "tr[a@]nny|tr[a@]nnies"
+  - "r[e3]tard(?:s|ed|edness)?"
+
+harassment:
+  - "kill yourself"
+  - "kys\\b"
+  - "go (?:die|fuck yourself)"
+  - "you (?:should|deserve to) (?:die|suffer)"
+
+threats_of_violence:
+  - "i('?ll| will) (?:hurt|harm|kill|beat) (?:you|him|her|them)"
+  - "(?:beat|hurt|kill) (?:you|him|her|them) up"
+  - "watch your back"
+  - "i know where you (?:live|work)"
+
+sexual_explicit:
+  # Minimal — most sexual-explicit content is caught by the slur list above.
+  # Add to the gitignored production file for a more comprehensive set.
+  - "send (?:me )?nudes"
+  - "show me your (?:tits|dick)"

@@ -1,0 +1,81 @@
+# bad_posts.yaml
+#
+# Hand-curated LinkedIn posts that the author considers bad — cringe, generic,
+# AI-tells, humblebrags, engagement-bait, etc. The reward should score these low.
+#
+# Schema (one entry per list item):
+#   - id:        string, stable identifier (e.g. "bad_001")
+#     text:      multi-line post text (use YAML "|" block scalar)
+#     my_rating: int, 1-10 — author's subjective quality rating (low for this file)
+#     why_bad:   free text explanation of what makes this post fail
+#     topic:     string, short topic label matching topics.yaml when possible
+
+- id: bad_001
+  text: |
+    PLACEHOLDER — paste a real bad post here.
+  my_rating: 2
+  why_bad: PLACEHOLDER
+  topic: career
+
+- id: bad_002
+  text: |
+    PLACEHOLDER
+  my_rating: 3
+  why_bad: PLACEHOLDER
+  topic: tech_leadership
+
+- id: bad_003
+  text: |
+    PLACEHOLDER
+  my_rating: 1
+  why_bad: PLACEHOLDER
+  topic: learning_in_public
+
+- id: bad_004
+  text: |
+    PLACEHOLDER
+  my_rating: 2
+  why_bad: PLACEHOLDER
+  topic: hiring
+
+- id: bad_005
+  text: |
+    PLACEHOLDER
+  my_rating: 3
+  why_bad: PLACEHOLDER
+  topic: ai
+
+- id: bad_006
+  text: |
+    PLACEHOLDER
+  my_rating: 2
+  why_bad: PLACEHOLDER
+  topic: engineering_culture
+
+- id: bad_007
+  text: |
+    PLACEHOLDER
+  my_rating: 1
+  why_bad: PLACEHOLDER
+  topic: career_pivot
+
+- id: bad_008
+  text: |
+    PLACEHOLDER
+  my_rating: 3
+  why_bad: PLACEHOLDER
+  topic: side_projects
+
+- id: bad_009
+  text: |
+    PLACEHOLDER
+  my_rating: 2
+  why_bad: PLACEHOLDER
+  topic: mentorship
+
+- id: bad_010
+  text: |
+    PLACEHOLDER
+  my_rating: 1
+  why_bad: PLACEHOLDER
+  topic: open_source

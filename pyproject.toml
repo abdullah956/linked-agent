@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "linkedin-rl-agent"
+version = "0.1.0"
+description = "Custom RL environment + GRPO fine-tune of Qwen3-1.7B that learns to write good LinkedIn posts."
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [{ name = "abdullah956" }]
+license = { text = "MIT" }
+dependencies = [
+    "numpy",
+    "pyyaml",
+    "pytest",
+    "transformers",
+    "datasets",
+    "peft",
+    "trl",
+    "gymnasium",
+    "wandb",
+    "python-dotenv",
+    "rich",
+    "scipy",
+]
+
+[project.optional-dependencies]
+dev = ["pytest", "ruff"]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["reward*", "env*", "agent*"]
+exclude = ["tests*", "scripts*", "training*", "results*", "data*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
