@@ -1,4 +1,4 @@
-# linkedin-rl-agent
+# linked-agent
 
 A custom RL environment + GRPO fine-tune of **Qwen3-1.7B** that learns to write good LinkedIn posts.
 
